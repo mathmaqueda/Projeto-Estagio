@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Competitiva</title>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Oxanium:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="inicio">
+        <div class="container">
+            <h1 id="titulo">{Programação Competitiva}</h1>
+            <div class="icones-inicio"> <!-- Primeira linha de ícones-->
+                <div class="inicio-nav">
+                    <a href="#sobre">
+                        <img src="img/sobre.png" alt="Sobre">
+                        <h2>Sobre</h2>
+                    </a>
+                </div>
+                <div class="inicio-nav">
+                    <a href="#inscricao">
+                        <img src="img/inscricao.png" alt="Inscrição">
+                        <h2>Inscrição</h2>
+                    </a>
+                </div>
+                <div class="inicio-nav">
+                    <a href="#agenda">
+                        <img src="img/agenda.png" alt="Agenda">
+                        <h2>Agenda</h2>
+                    </a>
+                </div>
+                <div class="inicio-nav">
+                    <a href="#historico">
+                        <img src="img/historico.png" alt="Histórico">
+                        <h2>Histórico</h2>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Header / NAV -->
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="">{Programação Competitiva}</a>
+        </div>
+        <button class="navbar-toggler nav-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">
+                        <!-- <img src="img/sobre.png" alt="Sobre"> -->
+                        <p>Sobre</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#inscricao">
+                        <!-- <img src="img/inscricao.png" alt="Inscrição"> -->
+                        <p>Inscrição</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#agenda">
+                        <!-- <img src="img/agenda.png" alt="Agenda"> -->
+                        <p>Agenda</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#historico">
+                        <!-- <img src="img/historico.png" alt="Histórico"> -->
+                        <p>Histórico</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Início Sobre -->
+
+    <section id="sobre">
+        <h1 class="titulo-secao">Sobre</h1>
+        <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carrossel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carrossel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carrossel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="imagem-fundo" style="background-image: url(./img/carrossel1.jpg);">
+                    </div>
+                    <div class="container">
+                        <h1>Maratona SBC de 2023</h1>
+                        <p>Alunos da Fatec Ourinhos participantes da 2ª fase da maratona SBC de 2023</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="imagem-fundo" style="background-image: url(./img/carrossel_exemplo2.jpg);">
+                    </div>
+                    <div class="container">
+                        <h1>Título de Exemplo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, labore, et, error.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="imagem-fundo" style="background-image: url(./img/carrossel_exemplo3.jpg);">
+                    </div>
+                    <div class="container">
+                        <h1>Título de Exemplo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, labore, et, error.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#carrossel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="sr-only"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#carrossel" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="sr-only"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="div-sobre-mae container"> <!-- O que é, e Objetivos-->
+            <div class="div-esquerda">
+                <h2 class="subtitulo">
+                    O que é?
+                </h2>
+                <p>
+                    O site "Programação Competitiva" é uma plataforma dedicada à divulgação e promoção de competições e maratonas de programação. Ele fornecerá informações detalhadas sobre esses eventos e um histórico das competições realizadas na faculdade Fatec Ourinhos, servindo como uma fonte valiosa de referência para potenciais participantes.
+                </p>
+                <img id="img-nuvem-icones" src="img/nuvem-icones.png" alt="Nuvem de Ícondes" class="ilustracao">
+            </div>
+            <div class="borda"></div>
+            <div class="div-direita">
+                <img id="img-programadores" src="img/programadores.png" alt="Programadores" class="ilustracao">
+                <h2 class="subtitulo">
+                    Objetivos
+                </h2>
+                <p>
+                    Os objetivos do site incluem a apresentação de uma agenda atualizada das próximas competições. Essa agenda não só serve como um guia para os interessados em participar de futuros eventos, mas também busca atrair programadores de todos os níveis, incentivando-os a explorar e se envolver na programação competitiva. Principalmente, o site visa informar os interessados e despertar o interesse em um campo emocionante da informática, contribuindo assim para o crescimento e desenvolvimento da comunidade de programação competitiva.
+                </p>
+            </div>
+        </div>
+
+        <div class="container organizadores-maratonas"> <!-- Organizadores das Maratonas -->
+            <div class="organizador">
+                <h2 class="subtitulo">
+                    Organizadores das Maratonas
+                </h2>
+                <img src="img/interfatecs-logo.png" alt="Maratona InterFatecs de Programação" class="img-organizador-maratona">
+                <p>
+                    A Maratona de Programação InterFatecs é um evento anual promovido pelas Fatec - Faculdades de Tecnologia do Estado de São Paulo e o CPS - Centro Estadual de Educação Tecnológica Paula Souza que reúne estudantes e docentes das várias Fatecs que oferecem cursos na área de Informática.
+                    Para mais informações, acesse: <a href="https://www.interfatecs.com.br">www.interfatecs.com.br</a>
+                </p>
+            </div>
+            <div class="organizador">
+                <img src="img/sbc-logo.png" alt="Maratona SBC de Programação" class="img-organizador-maratona">
+                <p>
+                    A Maratona SBC de Programação é um evento da Sociedade Brasileira de Computação que existe desde o ano de 1996. Nasceu das competições regionais classificatórias para as etapas mundiais da competição de programação, o International Collegiate Programming Contest, e é parte da regional sul-americana do evento. Para mais informações, acesse: <a href="https://maratona.sbc.org.br/index.html">https://maratona.sbc.org.br/index.html</a>
+                </p>
+            </div>
+            <div class="organizador">
+                <h2 style="display: block; margin: 0 auto 20px auto; text-align: center;">
+                    Maratona de Programação FATEC-Ourinhos
+                </h2>
+                <p>
+                    A Maratona de Programação Fatec Ourinhos é um evento anual que atrai participantes de diversas cidades. Esta competição desafia equipes de programadores a resolverem problemas complexos em um período de tempo limitado, promovendo o trabalho em equipe, o raciocínio lógico e a criatividade. Com uma atmosfera competitiva e colaborativa, a maratona é uma oportunidade única para estudantes e profissionais demonstrarem suas habilidades em programação e se conectarem com outros entusiastas da área.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscricao"> <!-- Inscrição -->
+        <h1 class="titulo-secao">Inscrição</h1>
+        <div class="container">
+            <h2 class="subtitulo">Como Fazer?</h2>
+            <p>
+                Para participar de qualquer maratona ou competição, o processo de inscrição é simples: basta entrar em contato com o responsável pelas inscrições e seu nome será inscrito. O contato do responsável está logo abaixo.
+            </p>
+            <h2 class="subtitulo">Como se Preparar?</h2>
+            <p>
+                Para se preparar para uma competição ou maratona de programação, é importante estabelecer um cronograma de estudos e prática, dedicando tempo diariamente para resolver desafios de programação e revisar conceitos-chave. Além disso, é essencial participar de competições menores para ganhar experiência e trabalhar em equipe. Por fim, é crucial manter uma atitude positiva, persistência e motivação para enfrentar os desafios que surgirão.
+            </p>
+            <h2 class="subtitulo">Responsável pelas inscrições:</h2>
+            <p>
+                Alex Marino. Contato: (11) 99426-5062.
+                Paulo Galego. Contato: 
+            </p>
+        </div>
+    </section>
+
+    <section id="contato"> <!-- Contato -->
+        
+    </section>
+
+    <section id="agenda"> <!-- Agenda -->
+        <h1 class="titulo-secao">Agenda</h1>
+        <div class="container">
+            <h2 class="subtitulo">Próximas competições:</h2>
+            <p>
+                InterFatecs:
+                <ol>
+                    <li>1ª Fase: - 18/05/2024 (18 de Maio)</li>
+                    <li>2ª Fase: - 28/09/2024 (28 de Setembro)</li>
+                </ol>
+                Maratona SBC de Programação:
+                <ol>
+                    <li>Previsto para Outubro</li>
+                </ol>
+                Maratona de Programação Fatec Ourinhos
+                <ol>
+                    <li>Competição Interna - 20/04/2024 (20 de Abril) - Local: Fatec Ourinhos</li>
+                </ol>
+            </p>
+        </div>
+    </section>
+
+    <section id="historico"> <!-- Histórico -->
+        <h1 class="titulo-secao">Histórico</h1>
+        <h2 class="subtitulo"><a class="acessa-historico">Acessar o Histórico de Competições</a></h2>
+        <h4 class="text-center">(Temporariamente Desativado)</h4>
+    </section>
+
+    <footer>
+        <h4>&copy; <span style="font-style: italic;">{Programação Competitiva}</span> - 2024</h4>
+        <h4>Desenvolvido por: Matheus Maqueda Martins</h4>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <!-- Boostrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

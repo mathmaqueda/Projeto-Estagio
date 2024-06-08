@@ -1,0 +1,538 @@
+/* gerais */
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1em;
+    background: url(../img/fundo.jpg);
+    color: #DDF2FD;
+}
+
+a {
+    text-decoration: none;
+    color: #0f7ae5;
+}
+
+.titulo-secao {
+    text-decoration: underline;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ilustracao {
+    width: 100%;
+}
+
+/* Barra de Rolagem */
+
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+    background: #041A3F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #08529C;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #074380;
+}
+
+/* Header */
+
+.navbar {
+    position: fixed;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 100;
+    background: #00192add;
+    height: 60px;
+}
+
+nav .logo {
+    text-align: center;
+    font-size: 1.35em;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-right: 20px;
+}
+
+nav .navbar-nav {
+    margin-top: 15px;
+}
+
+nav .nav-item {
+    margin: 0 20px;
+}
+
+nav .nav-link {
+    color: #DDF2FD;
+    font-size: 1.15em;
+    text-align: right;
+    margin-right: 15px;
+}
+
+nav .nav-link:hover {
+    text-decoration: underline;
+    color: #0f7ae5;
+}
+
+nav .nav-botao {
+    position: absolute;
+    right: 15px;
+}
+
+.nav-animacao {
+    top: 0;
+}
+
+/* Início */
+
+#inicio {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#inicio a {
+    color: #fff;
+}
+
+#inicio > .container {
+    width: 825px;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 5.5em;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.icones-inicio {
+    margin-top: 25px;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.icones-inicio img {
+    width: 80px;
+}
+
+.icones-inicio div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.inicio-nav {
+    cursor: pointer;
+    text-align: center;
+}
+
+/* seção 1 - Sobre */
+
+.carousel-item {
+    width: 78%;
+    height: 30em;
+    background: #000;
+    color: #DDF2FD;
+    position: relative;
+    margin-left: 11%;
+}
+
+#carrossel img {
+    object-fit: cover;
+    margin: auto;
+}
+
+.carousel-item > .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+
+li::marker {
+    font-size: 0;
+}
+
+.imagem-fundo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.5;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-item p, .carousel-item h1 {
+    margin-bottom: 0;
+}
+
+#carrossel {
+    margin-bottom: 60px;
+}
+
+/* Sobre - O que é, Objetivos */
+
+.div-sobre-mae {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 60px;
+}
+
+.div-esquerda {
+    width: 45%;
+    padding-right: 35px;
+}
+
+.borda {
+    border: 1px solid #2C67A6cc;
+    border-radius: 5px;
+    height: 450px;
+}
+
+.div-direita {
+    width: 45%;
+    padding-left: 35px;
+}
+
+/* Organizadores das Maratonas */
+
+.organizadores-maratonas {
+    text-align: justify;
+    margin-bottom: 60px;
+}
+
+.img-organizador-maratona {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.organizador {
+    margin-top: 40px;
+}
+
+/* Inscrição */
+
+#inscricao {
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+/* Contato */
+
+#contato {
+    margin-bottom: 60px;
+}
+
+/* Agenda */
+
+#agenda {
+    margin-bottom: 60px;
+}
+
+/* Histórico */
+
+#historico {
+    margin-bottom: 60px;
+}
+
+.acessa-historico:hover {
+    transition: 0.6s;
+    color: #65aaef;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #00192aba;
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+footer h4 {
+    font-size: 1em;
+}
+
+/***********************************/
+/* Página Histórico */
+/***********************************/
+
+/* Navbar */
+
+#pag-historico .navbar {
+    position: absolute;
+    background: none;
+    top: 0;
+    left: 0;
+    font-size: 0.75em;
+}
+
+#pag-historico .navbar .navbar-brand:hover {
+    transition: 0.6s;
+    color: #0f7ae5;
+}
+
+/* Titulo */
+
+#pag-historico #catalogo .catalogo-itens a {
+    color: white;
+    background: #08529caf;
+    font-size: 2em;
+    padding: 5px;
+}
+
+#pag-historico .titulos {
+    width: 60em;
+    text-align: center;
+    margin: 1em auto 1.5em auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0f7ae5;
+}
+
+#pag-historico .titulos h1 {
+    font-size: 2em;
+}
+
+#pag-historico .titulos h3 {
+    font-size: 1.5em; 
+}
+
+/* Catálogo de Itens */
+
+#pag-historico #catalogo .catalogo-itens a:hover {
+    transition: 0.6s;
+    color: white;
+    text-decoration: underline;
+    background: #0f7ae5;
+}
+
+#pag-historico .catalogo-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#pag-historico .imagem-fundo {
+    opacity: 0.6;
+}
+
+/*******************************************/
+
+/* Conteúdos Histórico */
+
+#conteudo-historico ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#conteudo-historico ul li a span:hover {
+    text-decoration: underline;
+    color: #0f7ae5;
+}
+
+#conteudo-historico .carousel-item p {
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    /* Início */
+    .inicio-nav h2 {
+        font-size: 2em;
+    }
+    .icones-inicio img {
+        width: 70px;
+    }
+    /* Carrossel */
+    .carousel-item h1 {
+        font-size: 2em;
+    }
+    /* Nav */
+    nav .nav-item {
+        margin: 0 10px;
+    }
+    
+    /***********************************/
+    /* Página Histórico */
+    /***********************************/
+    #pag-historico .titulos {
+        width: 50em;
+    }
+}
+
+@media (max-width: 577px) {
+
+    /* Página Histórico Nav */
+    #pag-historico .navbar .nav-sm {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 525px) {
+    body {
+        font-size: 10px;
+    }
+    .icones-inicio img {
+        width: 50px;
+    }
+    .inicio-nav h2 {
+        font-size: 1.7em;
+    }
+    /* Sobre - O que é / Objetivos */
+    .div-esquerda {
+        padding-right: 0;
+        width: 95%;
+    }
+    .div-direita {
+        padding-left: 0;
+        width: 95%;
+    }
+    .borda {
+        display: none;
+    }
+    #img-nuvem-icones {
+        display: none;
+    }
+    #img-programadores {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    /***********************************/
+    /* Página Histórico */
+    /***********************************/
+    #pag-historico .titulos {
+        width: 40em;
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        font-size: 8px;
+    }
+    /* Início */
+    .icones-inicio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icones-inicio .inicio-nav {
+        margin: 15px 40px;
+    }
+    #inicio .container {
+        margin-top: 100px;
+    }
+    /* Sobre */
+    #sobre {
+        margin-top: 60px;
+    }
+    /* Footer */
+    footer {
+        height: 7.5em;
+    }
+    footer h4 {
+        font-size: 1.5em;
+    }
+
+    /***********************************/
+    /* Página Histórico */
+    /***********************************/
+
+    /* Navbar */
+
+    #pag-historico .navbar .navbar-brand {
+        font-size: 2em;
+    }
+
+    #pag-historico .navbar {
+        height: 40px;
+    }
+    
+    /* Títulos */
+
+    #pag-historico .titulos {
+        width: 42.5em;
+        margin: 1.25em auto 1.5em auto;
+    }
+    #pag-historico .titulos h1 {
+        font-size: 2em;
+    }
+    
+    #pag-historico .titulos h3 {
+        font-size: 1.25em;
+    }
+
+    /* #pag-historico #catalogo .icon-voltar {
+        visibility: visible;
+        top: 7.5px;
+        left: 7.5px;
+    }
+
+    #pag-historico #catalogo .txt-voltar {
+        visibility: hidden;
+    } */
+}
+
+@media (max-width: 365px) {
+    body {
+        font-size: 7px;
+    }
+    /* Início */
+    #inicio .container {
+        margin-top: 1vh;
+    }
+    /* Sobre */
+    #sobre {
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 321px) {
+    #inicio .container {
+        margin-top: 1vh;
+    }
+    #sobre {
+        margin-top: 210px;
+    }
+}
+
+
+
+
+
+
